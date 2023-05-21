@@ -1,0 +1,81 @@
+body{
+    background-image: url('../images/JediBack.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: .8s;
+}
+
+input[type="checkbox"]{
+    margin-top: 10px;
+    position: relative;
+    width: 14ex;
+    height: 4ex;
+    appearance: none; /* сброс внешнего вида по умолчанию */
+    outline: none;
+    background: #1E90FF;
+    border-radius: 20px;
+    transition: 1s; /* для плавного изменения стиля CSS */
+    box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+}
+
+input:checked[type="checkbox"]{
+    background: red;
+}
+
+input[type="checkbox"]:before{
+    content: '';
+    position: absolute;
+    width: 4ex;
+    height: 4ex;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background: #fff;
+    transition: 1s;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+
+input:checked[type="checkbox"]:before{
+    left: 10.1ex;
+}
+
+.side_text_j{
+    width: 40px;
+    height: 60px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border: 0;
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+}
+.side_text_s{
+    width: 35px;
+    height: 60px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    border: 0;
+    vertical-align: middle;
+    color: #fff;
+}
+.side_check{
+    display: inline-block;
+}
+.choose_side_content{
+    width: 200px;
+    height: 60px;
+    margin: 0 auto;
+    border: 0;
+    padding: 0;
+}
+.mainData{
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.7);
+    border-radius: 0 0 20px 20px;
+    height: 100vh;
+}
+.signIn{
+    margin-right: 1ex;
+}

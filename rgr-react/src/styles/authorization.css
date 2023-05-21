@@ -1,0 +1,62 @@
+body{
+    background-image: none;
+}
+.main-block{
+    margin: 0 0 0 -350px;
+    width:700px;
+    position: absolute;
+    left: 50%;
+}
+.logo-block{
+    margin:0 25% 0 25%;
+    text-align: center;
+}
+.head-text-block{
+    margin:0 25% 0 25%;
+    text-align: center;
+    font-size: 5ex;
+    font-family: Andale Mono, monospace;
+    margin-bottom: 1.5ex;
+}
+.authorization-block{
+    margin:0 25% 0 25%;
+    width:350px;
+    height: 26ex;
+    background-color: rgb(176, 196, 222, 0.15);
+    border-radius: 10px;
+    font-family: Andale Mono, monospace;
+    padding-top: 2ex;
+    padding-bottom: 2ex;
+}
+.logo-style{
+    width: 150px;
+}
+.auth-name-email{
+    margin-left: 2ex;
+    margin-bottom: 1ex;
+}
+.auth-upasswd{
+    margin-top: 1ex;
+    margin-left: 2ex;
+    margin-bottom: 1ex;
+}
+input[type="text"] {
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    margin-left: 2ex;
+    width: 86%;
+    height: 3ex;
+    padding-left: 2ex;
+    font-family: Andale Mono, monospace;
+ }
+ .sign-in-button{
+    background-color: #3CB371;
+    font-family: Andale Mono, monospace;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    width: 307px;
+    margin-top: 2ex;
+    margin-left: 2ex;
+    font-size: 2.5ex;
+ }
