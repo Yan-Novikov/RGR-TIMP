@@ -3,9 +3,9 @@ import "../styles/checkmark.css";
 import jedi from "../images/JediBack.png";
 import sith from "../images/SithBack.jpg";
 
-const CheckJS = function(){
+const CheckJS = function({checked, setChecked}){
     document.body.style.backgroundImage = `url(${jedi})`;
-    const [checked, setChecked] = useState(false);
+    
 
     if(checked != true){
         document.body.style.backgroundImage = `url(${jedi})`;

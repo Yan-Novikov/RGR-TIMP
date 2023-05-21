@@ -2,7 +2,28 @@ import React from "react";
 import "../styles/checkmark.css";
 import { Link } from "react-router-dom";
 
-const Navbar = function(){
+const Navbar = function(props){ 
+    let homeActive = "nav-link";
+    let historyActive = "nav-link";
+    let charactersActive = "nav-link";
+
+    if(props.activeEl == "Home"){
+      homeActive = "nav-link active";
+      historyActive = "nav-link";
+      charactersActive = "nav-link";
+    }
+    else if(props.activeEl == "History"){
+      homeActive = "nav-link";
+      historyActive = "nav-link active";
+      charactersActive = "nav-link";
+    }
+    else if(props.activeEl == "Characters"){
+      homeActive = "nav-link";
+      historyActive = "nav-link";
+      charactersActive = "nav-link active";
+    }
+    
+
     return(
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -15,13 +36,13 @@ const Navbar = function(){
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <Link class="nav-link active" Link to="/">Home</Link>
+                <Link class={homeActive} Link to="/">Home</Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link" Link to="/history">Orden history</Link>
+                <Link class={historyActive} Link to="/history">Orden history</Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link" Link to="/characters">Famous characters</Link>
+                <Link class={charactersActive} Link to="/characters">Famous characters</Link>
               </li>
             </ul>
             <form class="d-flex" role="search">

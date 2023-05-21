@@ -5,7 +5,7 @@ import CheckJS from "./components/CheckJS";
 const History = () => {
     return(
         <div className="history">
-            <Navbar/>
+            <Navbar activeEl={"History"} />
             <div class="container text-center">
                 <div class="row">
                 <div class="col-lg-11 col-md-8 mx-auto mainData">
