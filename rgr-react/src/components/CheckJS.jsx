@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../styles/checkmark.css";
 import jedi from "../images/JediBack.png";
 import sith from "../images/SithBack.jpg";

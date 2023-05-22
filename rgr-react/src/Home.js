@@ -30,7 +30,7 @@ const Home = () => {
                 <div class="col-lg-11 col-md-8 mx-auto mainDataHome">
                 <CheckJS checked={checked} setChecked={setChecked} />
                 <div class="mainContent">
-                    <img src={changingImage} alt="That's not a problem" width="400ex"/>
+                    <img src={changingImage} alt="That's not a problem" width="600ex"/>
                     <font color="#fff">
                     <h1>{article}</h1>
                     <p>{underArticle}</p>

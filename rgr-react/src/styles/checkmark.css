@@ -87,7 +87,7 @@ input:checked[type="checkbox"]:before{
     margin-right: 1ex;
 }
 .mainContent{
-    margin-top: 50px;
+    margin-top: 100px;
 }
 #history-content{
     font-family: 'Times New Roman', Times, serif;
@@ -98,4 +98,24 @@ input:checked[type="checkbox"]:before{
     font-family: 'Times New Roman', Times, serif;
     font-size: 3ex;
     text-align: left;
+}
+.card{
+    width: 48%;
+    border: 0;
+    margin-bottom: 4ex;
+}
+.card-body{
+    background-color: rgb(20, 20, 20);
+}
+.characters-div{
+    border: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card-text{
+    vertical-align: middle;
+    justify-content: center;
+    align-content: center;
 }

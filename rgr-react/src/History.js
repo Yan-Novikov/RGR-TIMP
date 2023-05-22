@@ -41,7 +41,7 @@ const History = () => {
                 <CheckJS checked={checked} setChecked={setChecked} />
                 <font color="#fff">
                 <div id="history-content">
-                    <h1>В скором времени тут появится история ордена.</h1>
+                    <h1>Тут история ордена.</h1>
                 </div>
                 </font>
                 </div>

@@ -58,14 +58,6 @@ const Navbar = function(props){
                 <Link class={charactersActive} Link to="/characters">Famous characters</Link>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <Link Link to="/authorization">
-                <button class="btn btn-outline-light signIn" type="button">Sign In</button>
-              </Link>
-              <Link Link to="/registration">
-                <button class="btn btn-outline-success" type="button">Sign Up</button>
-              </Link>
-            </form>
           </div>
         </div>
       </nav>

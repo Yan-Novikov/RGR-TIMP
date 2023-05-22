@@ -2,9 +2,6 @@ import Home from "./Home";
 import History from "./History";
 import Characters from "./Characters";
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
-import Authorization from "./Authorization";
-import Registration from "./Registration";
-import ThemeContext from "./contextBack";
 import Basic from "./Basic";
 
 const router = createBrowserRouter([
@@ -23,14 +20,6 @@ const router = createBrowserRouter([
   {
     path: "/characters",
     element: <Characters />,
-  },
-  {
-    path: "/authorization",
-    element: <Authorization />,
-  },
-  {
-    path: "/registration",
-    element: <Registration />,
   },
   {
     path: "*",
