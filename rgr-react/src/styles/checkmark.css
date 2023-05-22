@@ -73,12 +73,29 @@ input:checked[type="checkbox"]:before{
     background-color: rgba(0, 0, 0, 0.7);
     box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.7);
     border-radius: 0 0 20px 20px;
+    height: max-content;
+    transition: .5s;
+}
+.mainDataHome{
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.7);
+    border-radius: 0 0 20px 20px;
     height: 100vh;
+    transition: .5s;
 }
 .signIn{
     margin-right: 1ex;
 }
 .mainContent{
     margin-top: 50px;
-    transition: .5s;
+}
+#history-content{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3ex;
+    text-align: left;
+}
+#basic-content{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3ex;
+    text-align: left;
 }

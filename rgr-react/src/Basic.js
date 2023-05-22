@@ -2,10 +2,10 @@ import "./styles/checkmark.css";
 import Navbar from "./components/Navbar";
 import CheckJS from "./components/CheckJS";
 import { useState } from "react";
-import DivTextJ from "./texts/HistoryJedi.txt";
-import DivTextS from "./texts/HistorySith.txt";
+import DivTextJ from "./texts/ShortJedi.txt";
+import DivTextS from "./texts/ShortSith.txt";
 
-const History = () => {
+const Basic = () => {
     const [checked, setChecked] = useState(false);
     let fullText = DivTextJ; 
     if(checked)
@@ -20,7 +20,7 @@ const History = () => {
         .then(response => response.text())
         .then(text => {
           const paragraphs = text.split('\n');
-          const contentElement = document.getElementById('history-content');
+          const contentElement = document.getElementById('basic-content');
 
           while(contentElement.firstChild){
             contentElement.removeChild(contentElement.firstChild);
@@ -33,15 +33,15 @@ const History = () => {
         });
 
     return(
-        <div className="history">
-            <Navbar activeEl={"History"} />
+        <div className="basic">
+            <Navbar activeEl={"Basic"} />
             <div class="container text-center">
                 <div class="row">
                 <div class="col-lg-11 col-md-8 mx-auto mainData">
                 <CheckJS checked={checked} setChecked={setChecked} />
                 <font color="#fff">
-                <div id="history-content">
-                    <h1>В скором времени тут появится история ордена.</h1>
+                <div id="basic-content">
+                    <h1>В скором времени тут появится краткая информация об ордене.</h1>
                 </div>
                 </font>
                 </div>
@@ -51,4 +51,4 @@ const History = () => {
     );
 }
 
-export default History;
+export default Basic;

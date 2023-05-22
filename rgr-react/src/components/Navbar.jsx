@@ -6,21 +6,31 @@ const Navbar = function(props){
     let homeActive = "nav-link";
     let historyActive = "nav-link";
     let charactersActive = "nav-link";
+    let basicActive = "nav-link";
 
     if(props.activeEl == "Home"){
       homeActive = "nav-link active";
       historyActive = "nav-link";
       charactersActive = "nav-link";
+      basicActive = "nav-link";
     }
     else if(props.activeEl == "History"){
       homeActive = "nav-link";
       historyActive = "nav-link active";
       charactersActive = "nav-link";
+      basicActive = "nav-link";
     }
     else if(props.activeEl == "Characters"){
       homeActive = "nav-link";
       historyActive = "nav-link";
+      basicActive = "nav-link";
       charactersActive = "nav-link active";
+    }
+    else if(props.activeEl == "Basic"){
+      basicActive = "nav-link active";
+      historyActive = "nav-link";
+      charactersActive = "nav-link";
+      homeActive = "nav-link";
     }
     
 
@@ -37,6 +47,9 @@ const Navbar = function(props){
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <Link class={homeActive} Link to="/">Home</Link>
+              </li>
+              <li class="nav-item">
+                <Link class={basicActive} Link to="/basic">Orden basic info</Link>
               </li>
               <li class="nav-item">
                 <Link class={historyActive} Link to="/history">Orden history</Link>

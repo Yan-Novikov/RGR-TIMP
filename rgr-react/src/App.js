@@ -4,11 +4,17 @@ import Characters from "./Characters";
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import Authorization from "./Authorization";
 import Registration from "./Registration";
+import ThemeContext from "./contextBack";
+import Basic from "./Basic";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/basic",
+    element: <Basic />,
   },
   {
     path: "/history",
