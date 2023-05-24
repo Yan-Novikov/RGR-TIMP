@@ -3,6 +3,10 @@ import History from "./History";
 import Characters from "./Characters";
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import Basic from "./Basic";
+import { useState } from "react";
+import { createContext } from 'react';
+
+export const ThemeContext = createContext(null);
 
 const router = createBrowserRouter([
   {
@@ -28,11 +32,14 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  const chosenSide = useState(false);
 
   return (
+    <ThemeContext.Provider value={chosenSide}>
     <div className="app">
       <RouterProvider router={router} />
     </div>
+    </ThemeContext.Provider>
   );
 }
 

@@ -1,12 +1,13 @@
 import "./styles/checkmark.css";
 import Navbar from "./components/Navbar";
 import CheckJS from "./components/CheckJS";
-import { useState } from "react";
 import DivTextJ from "./texts/HistoryJedi.txt";
 import DivTextS from "./texts/HistorySith.txt";
+import {ThemeContext} from "./App.js";
+import { useContext } from "react";
 
 const History = () => {
-    const [checked, setChecked] = useState(false);
+    const [checked, setChecked] = useContext(ThemeContext);
     let fullText = DivTextJ; 
     if(checked)
     {

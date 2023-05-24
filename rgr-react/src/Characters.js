@@ -1,12 +1,12 @@
 import "./styles/checkmark.css";
 import Navbar from "./components/Navbar";
 import CheckJS from "./components/CheckJS";
-import { useState } from "react";
-import JediDraw from "./images/JCard7.jpg";
 import CharactersCards from "./components/CharactersCards";
+import {ThemeContext} from "./App.js";
+import { useContext } from "react";
 
 const Characters = () => {
-    const [checked, setChecked] = useState(false);
+    const [checked, setChecked] = useContext(ThemeContext);
 
     let currentSide;
 

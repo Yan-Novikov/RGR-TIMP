@@ -1,12 +1,13 @@
 import "./styles/checkmark.css";
 import Navbar from "./components/Navbar";
 import CheckJS from "./components/CheckJS";
-import { useState } from "react";
+import { useContext } from "react";
 import SithMan from "./images/DarthVaider.jpg";
 import JediMan from "./images/MaceWindu.jpg";
+import {ThemeContext} from "./App.js";
 
 const Home = () => {
-    const [checked, setChecked] = useState(false);
+    const [checked, setChecked] = useContext(ThemeContext);
     let changingImage = null;
     let article = "";
     let underArticle = "";
@@ -30,7 +31,7 @@ const Home = () => {
                 <div class="col-lg-11 col-md-8 mx-auto mainDataHome">
                 <CheckJS checked={checked} setChecked={setChecked} />
                 <div class="mainContent">
-                    <img src={changingImage} alt="That's not a problem" width="600ex"/>
+                    <img src={changingImage} alt="That's not a problem" width="50%"/>
                     <font color="#fff">
                     <h1>{article}</h1>
                     <p>{underArticle}</p>
