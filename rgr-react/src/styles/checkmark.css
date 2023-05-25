@@ -2,7 +2,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    transition: .8s;
+    transition: .8s linear;
 }
 
 input[type="checkbox"]{
