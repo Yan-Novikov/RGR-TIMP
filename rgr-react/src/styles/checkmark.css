@@ -119,7 +119,10 @@ input:checked[type="checkbox"]:before{
     justify-content: center;
     align-content: center;
 }
-
+.home-text{
+    margin-top: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
 
 
 .inner{

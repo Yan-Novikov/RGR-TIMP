@@ -32,10 +32,12 @@ const Home = () => {
                 <CheckJS checked={checked} setChecked={setChecked} />
                 <div class="mainContent inner">
                     <img src={changingImage} alt="That's not a problem" width="50%"/>
-                    <font color="#fff">
-                    <h1>{article}</h1>
-                    <p>{underArticle}</p>
-                </font>
+                    <div class="home-text">
+                        <font color="#fff">
+                            <h1>{article}</h1>
+                            <h5>{underArticle}</h5>
+                        </font>
+                    </div>
                 </div>
                 </div>
                 </div>
