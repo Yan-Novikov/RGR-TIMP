@@ -28,9 +28,9 @@ const Home = () => {
             <Navbar activeEl={"Home"} />
             <div class="container text-center">
                 <div class="row">
-                <div class="col-lg-11 col-md-8 mx-auto mainDataHome">
+                <div class="col-lg-11 col-md-8 mx-auto mainDataHome wrap">
                 <CheckJS checked={checked} setChecked={setChecked} />
-                <div class="mainContent">
+                <div class="mainContent inner">
                     <img src={changingImage} alt="That's not a problem" width="50%"/>
                     <font color="#fff">
                     <h1>{article}</h1>

@@ -38,10 +38,10 @@ const Basic = () => {
             <Navbar activeEl={"Basic"} />
             <div class="container text-center">
                 <div class="row">
-                <div class="col-lg-11 col-md-8 mx-auto mainData">
+                <div class="col-lg-11 col-md-8 mx-auto mainData wrap">
                 <CheckJS checked={checked} setChecked={setChecked} />
                 <font color="#fff">
-                <div id="basic-content">
+                <div id="basic-content" class="inner">
                     <h1>В скором времени тут появится краткая информация об ордене.</h1>
                 </div>
                 </font>

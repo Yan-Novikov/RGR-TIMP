@@ -38,10 +38,10 @@ const History = () => {
             <Navbar activeEl={"History"} />
             <div class="container text-center">
                 <div class="row">
-                <div class="col-lg-11 col-md-8 mx-auto mainData">
+                <div class="col-lg-11 col-md-8 mx-auto mainData wrap">
                 <CheckJS checked={checked} setChecked={setChecked} />
                 <font color="#fff">
-                <div id="history-content">
+                <div id="history-content" class="inner">
                     <h1>Тут история ордена.</h1>
                 </div>
                 </font>
