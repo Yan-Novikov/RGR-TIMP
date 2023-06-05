@@ -128,19 +128,13 @@ input:checked[type="checkbox"]:before{
 .inner{
     position :relative;
     left:1200px;
-    -webkit-animation: move 2s;
     animation: move 2s;
-    -webkit-animation-fill-mode:forwards;
     animation-fill-mode:forwards;
 }
 .wrap{
     overflow:hidden;
 }
 @keyframes move{
-    from{left: 1200px;}
-    to{left:0;}
-}
-@-webkit-keyframes move{
     from{left: 1200px;}
     to{left:0;}
 }
